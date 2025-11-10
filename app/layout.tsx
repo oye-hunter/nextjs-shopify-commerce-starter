@@ -80,7 +80,7 @@ export default async function RootLayout({
             unavailableMessage={SHOP_UNAVAILABLE_USER_MESSAGE}
           >
             <Navbar />
-            <main>
+            <main className={`h-full min-h-[calc(100vh-276px)]`}>
               <ShopUnavailableBanner />
               <RootProvider>
                 <Suspense fallback={null}>
