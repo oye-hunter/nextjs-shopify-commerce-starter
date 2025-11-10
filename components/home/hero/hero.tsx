@@ -36,24 +36,23 @@ export default function Hero() {
                         className='flex flex-1 flex-col justify-center py-10 xl:py-16'>
                         <div className='max-w-xl'>
                             <span className='text-primary-text border-canvas-line mb-4 block max-w-fit rounded border border-none bg-transparent px-1 font-mono text-sm leading-normal font-normal tracking-widest whitespace-nowrap uppercase md:text-base'>
-                                Powered by Bloggen
+                                Powered by Bloggen & Vercel Commerce
                             </span>
                             <h1 className='text-canvas-text-contrast mb-6 text-4xl leading-tight font-bold tracking-tight md:text-6xl'>
-                                All your SEO
+                                Craft a storefront
                                 <span className='from-primary-solid via-primary-text to-primary-text-contrast bg-gradient-to-r bg-clip-text text-transparent'>
                                     <br />
-                                    Already Done.
+                                    that feels uniquely yours.
                                 </span>
                             </h1>
                             <h2 className='text-canvas-text mb-8 text-xl leading-relaxed font-normal tracking-normal md:text-2xl'>
-                                Ready‑to‑deploy Next.js template with MDX blogs, Dynamic OG images, JSON‑LD, and top
-                                Lighthouse scores.
+                                Products & checkout powered by Shopify. UI, performance, blogs & structured data powered by Bloggen + Vercel Commerce.
                             </h2>
                             <div className='flex flex-col gap-4'>
                                 <div className='flex flex-col gap-4 sm:flex-row'>
                                     <Link
                                         target='_blank'
-                                        href='https://github.com/silverthreadlabs/bloggen-seo-starter'
+                                        href='https://github.com/Jaffer720/bloggen-commerce-starter'
                                         className='flex-1'>
                                         <Button
                                             color='primary'
@@ -69,22 +68,22 @@ export default function Hero() {
                                             View Source
                                         </Button>
                                     </Link>
-                                    <Link target='_blank' href='https://www.bloggen.dev/' className='flex-1'>
+                                    <Link href='/products' className='flex-1'>
                                         <Button
                                             color='primary'
                                             variant='surface'
                                             size='lg'
-                                            aria-label='Create Your First Post with Bloggen'
-                                            name='Create Your First Post with Bloggen'
+                                            aria-label='See the storefront'
+                                            name='See the storefront'
                                             fullWidth>
-                                            Create Your First Post
+                                            See The Storefront
                                         </Button>
                                     </Link>
                                 </div>
 
                                 <div className='bg-canvas-base border-canvas-bg-active flex items-center justify-between rounded-lg border px-4 py-3 font-mono text-sm shadow-inner'>
                                     <span className='text-canvas-text-contrast inline-flex max-w-fit px-1 text-sm leading-normal font-normal tracking-normal whitespace-nowrap md:text-lg '>
-                                        $ npx create-bloggen-app
+                                        $ npx create-bloggen-commerce-starter-app
                                     </span>
                                     <Button
                                         onClick={handleCopy}
