@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, motion, type Variants } from 'framer-motion';
 
 interface Feature {
     id: number;
@@ -14,31 +14,31 @@ interface Feature {
 const featuresData: Feature[] = [
     {
         id: 1,
-        title: 'Plug‑in MDX',
-        description: 'Instant Content Integration',
+        title: 'Shopify‑Native Checkout',
+        description: 'Secure, trusted checkout',
         details:
-            'Bloggen AI exports MDX posts that drop straight into the /content folder - no edits needed. Your content renders instantly, making content management seamless and efficient.'
+            'Use the Shopify Storefront API for products, carts and payments. Keep commerce on Shopify while you design freely in Next.js.'
     },
     {
         id: 2,
-        title: 'Designrift Theming',
-        description: 'Powerful Theme Creation',
+        title: 'Custom Next.js UI',
+        description: 'Bespoke storefront, no theme limits',
         details:
-            'Create stunning themes for your web application leveraging Radix color palettes for cohesive styling. Build beautiful, consistent user interfaces with our comprehensive theming system.'
+            'Build with the App Router, React Server Components and Tailwind. Ship pixel‑perfect product, collection and content layouts.'
     },
     {
         id: 3,
-        title: 'SEO All Set',
-        description: 'Complete SEO Infrastructure',
+        title: 'Performance & Caching',
+        description: 'Fast by default',
         details:
-            'Launch with confidence knowing all SEO essentials are pre-configured. From sitemaps and robots.txt to JSON-LD and dynamic OG images, plus an RSS feed - everything is pre-wired.'
+            'Server‑side rendering and smart caching keep product data fresh and snappy — great Core Web Vitals out of the box.'
     },
     {
         id: 4,
-        title: 'One‑Command Launch',
-        description: 'Effortless Deployment',
+        title: 'SEO & Analytics Ready',
+        description: 'Built‑in discoverability',
         details:
-            'Get started in seconds with a single command: npx create-bloggen-app. Push to Vercel and your typed Next.js 15 template goes live immediately.'
+            'Sitemap, robots.txt and JSON‑LD schema with dynamic Open Graph. Plug your analytics and CDP with minimal setup.'
     }
 ];
 
@@ -53,7 +53,7 @@ const containerVariants = {
     }
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
     hidden: {
         opacity: 0,
         x: -20,
@@ -78,7 +78,7 @@ export default function Features() {
         setActiveFeature(featureId);
     };
 
-    const currentFeature = featuresData.find((feature) => feature.id === activeFeature) || featuresData[0];
+    const currentFeature = featuresData.find((feature) => feature.id === activeFeature) ?? featuresData[0]!;
 
     return (
         <section className='py:10 w-full px-4 sm:px-6 lg:px-8 xl:py-16'>
@@ -91,10 +91,10 @@ export default function Features() {
                     viewport={{ once: true, margin: '-100px' }}
                     transition={{ duration: 0.6, ease: 'easeOut' }}>
                     <h2 className='text-canvas-text-contrast mb-4 text-3xl font-bold sm:text-4xl lg:text-5xl'>
-                        Powerful Features
+                        What you get out of the box
                     </h2>
                     <p className='text-canvas-text mx-auto max-w-2xl text-lg text-balance'>
-                        Discover the tools and capabilities that make our platform the perfect solution for your needs.
+                        A Shopify + Next.js starter focused on design freedom, speed, and SEO — launch fast with a solid foundation.
                     </p>
                 </motion.div>
 
@@ -113,7 +113,7 @@ export default function Features() {
                             return (
                                 <motion.div
                                     key={feature.id}
-                                    variants={{itemVariants}}
+                                    variants={itemVariants}
                                     onMouseEnter={() => handleFeatureHover(feature.id)}
                                     className={`group cursor-pointer rounded-lg border-l-4 p-6 transition-all duration-300 ease-out hover:shadow-md ${
                                         isActive

@@ -21,7 +21,7 @@ export default function Page() {
             <FAQSchema />
             <Hero />
             {/* <Performance /> */}
-            <DesignRift />
+            {/* <DesignRift /> */}
             <Features />
             <Faq />
             <Cta />

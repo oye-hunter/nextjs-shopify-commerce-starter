@@ -13,28 +13,33 @@ interface FAQItem {
 const faqData: FAQItem[] = [
     {
         id: 1,
-        question: 'What is bloggen-seo-starter?',
-        answer: "Bloggen SEO Starter is a production-ready Next.js 15 template designed for developers. It comes pre-configured with essential SEO features like JSON-LD, dynamic Open Graph images, sitemaps, robots.txt, and RSS feeds. Additionally, it supports MDX content, allowing seamless integration with bloggen.dev's AI-generated content."
+        question: 'What is this Shopify + Next.js starter?',
+        answer:
+            "A production‑ready starter that pairs Shopify's products, carts and checkout with a fully custom Next.js 16 UI. You keep Shopify for commerce while designing your storefront with modern React and Tailwind."
     },
     {
         id: 2,
-        question: 'How do I get started with bloggen-seo-starter?',
-        answer: 'To initiate your project, run the command: `npx create-bloggen-app`. This will scaffold a fully functional Next.js 15 application with all SEO configurations in place. Once set up, you can deploy your site to platforms like Vercel and begin adding content to the `/content` directory.'
+        question: 'How do I get started?',
+        answer:
+            'Run `npx create-bloggen-commerce-starter-app`, add your Shopify Storefront API credentials, and start the dev server. Design pages, map collections, and deploy to Vercel in minutes.'
     },
     {
         id: 3,
-        question: 'What SEO features are included out of the box?',
-        answer: 'Bloggen SEO Starter offers a suite of built-in SEO features, including:\n\n• JSON-LD structured data for enhanced search engine understanding.\n• Dynamic Open Graph images for improved social media sharing.\n• Pre-configured sitemaps and robots.txt files.\n• RSS feed generation for content syndication.\n• Optimized metadata handling for better search engine indexing.'
+        question: 'What SEO & performance features are built‑in?',
+        answer:
+            'You get sitemap and robots.txt generation, JSON‑LD schema, dynamic Open Graph images, and canonical tags. Server rendering, route‑level caching, and ISR keep pages fast and fresh.'
     },
-    {
-        id: 4,
-        question: 'How does bloggen.dev integrate with this template?',
-        answer: 'Bloggen.dev is an AI-powered content generation platform that produces MDX files for blogs and guides. These MDX files can be directly placed into the `/content` folder of the bloggen-seo-starter template. The template is designed to automatically render these files, eliminating the need for manual edits and streamlining the content publishing process.'
-    },
+    // {
+    //     id: 4,
+    //     question: 'Can I bring my own content system?',
+    //     answer:
+    //         'Yes. MDX works out of the box for guides and blogs. You can also integrate a headless CMS later without reworking your storefront logic.'
+    // },
     {
         id: 5,
-        question: 'Can I customize the design or theme of my site?',
-        answer: "Absolutely! The bloggen-seo-starter template is fully compatible with DesignRift, an open-source theme builder. DesignRift allows you to modify your site's appearance using Radix color palettes. Once you've customized your theme, you can integrate it into your bloggen-seo-starter project to achieve a personalized look and feel."
+        question: 'Is the design fully customizable?',
+        answer:
+            'Absolutely. Build with the App Router, React Server Components and Tailwind. Swap themes, extend tokens, and compose pixel‑perfect product and content pages.'
     }
 ];
 
@@ -52,9 +57,9 @@ const formatAnswer = (answer: string) => {
         '<code class="bg-canvas-bg-active px-2 py-1 rounded text-sm font-mono">$1</code>'
     );
 
-    // Handle line breaks and bullet points
+    // Handle line breaks and bullet points (• or -)
     formattedAnswer = formattedAnswer.replace(/\n\n/g, '<br><br>');
-    formattedAnswer = formattedAnswer.replace(/\n•/g, '<br>•');
+    formattedAnswer = formattedAnswer.replace(/\n[•-]/g, (m) => `<br>${m.slice(1)}`);
 
     return formattedAnswer;
 };
