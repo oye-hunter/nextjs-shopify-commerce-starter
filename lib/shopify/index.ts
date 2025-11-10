@@ -382,7 +382,7 @@ export async function getCollectionProducts({
   collection: string;
   reverse?: boolean;
   sortKey?: string;
-}): Promise<Product[]> {
+}): Promise<Product[] | undefined> {
   'use cache';
   cacheTag(TAGS.collections, TAGS.products);
   cacheLife('days');
