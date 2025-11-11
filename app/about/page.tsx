@@ -8,7 +8,7 @@ import AboutSchema from '@/lib/seo/schema/about';
 export const metadata: Metadata = createPageMetadata({
     path: 'about',
     description:
-        'Launch a fully optimized Next.js site with Bloggen SEO Starter, then create high-quality, SEO-friendly content effortlessly using Bloggen AI.'
+    'Build a custom Shopify storefront with Next.js. Server-first rendering, baked-in SEO, MDX content, and Shopify products/checkout via the Storefront API.'
 });
 
 export default function AboutPage() {
@@ -47,12 +47,12 @@ export default function AboutPage() {
                     <h1
                         id='about-page-title'
                         className='text-canvas-text-contrast mb-4 text-4xl leading-tight font-bold tracking-tight md:text-6xl'>
-                        Next.js SEO Template
+                        Custom Shopify Storefront with Next.js
                     </h1>
                     <h2
                         id='about-page-subtitle'
                         className='text-canvas-text text-lg leading-relaxed font-semibold tracking-normal text-balance md:text-xl'>
-                        Spin up a production-ready site with SEO, performance, and content workflows already solved.
+                        Design a bespoke, fast storefront backed by Shopify products and checkout—SEO, performance, and content workflows included.
                     </h2>
                 </header>
 
