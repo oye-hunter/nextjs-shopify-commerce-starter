@@ -1,7 +1,7 @@
 import { CartProvider } from 'components/cart/cart-context';
 import { Navbar } from 'components/layout/navbar';
-import { WelcomeToast } from 'components/welcome-toast';
-import { ShopUnavailableBanner } from 'components/shop-unavailable-banner';
+import { WelcomeToast } from '@/components/ui/welcome-toast';
+import { ShopUnavailableBanner } from '@/components/ui/shop-unavailable-banner';
 import { Manrope } from 'next/font/google';
 import { ThemeProvider } from 'next-themes';
 

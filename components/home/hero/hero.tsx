@@ -68,15 +68,15 @@ export default function Hero() {
                                             View Source
                                         </Button>
                                     </Link>
-                                    <Link href='/products' className='flex-1'>
+                                    <Link href='/docs' className='flex-1'>
                                         <Button
                                             color='primary'
                                             variant='surface'
                                             size='lg'
-                                            aria-label='See the storefront'
-                                            name='See the storefront'
+                                            aria-label='Get Started'
+                                            name='Get Started'
                                             fullWidth>
-                                            See The Storefront
+                                            Get Started
                                         </Button>
                                     </Link>
                                 </div>

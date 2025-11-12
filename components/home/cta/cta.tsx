@@ -35,18 +35,18 @@ export default function Cta() {
 
                         {/* CTA Section */}
                         <div className='flex flex-col gap-4 sm:flex-row sm:justify-center'>
-                            <Link href='https://www.bloggen.dev/' target='_blank' rel='noopener noreferrer'>
+                            <Link href='/docs' target='_blank' rel='noopener noreferrer'>
                                 <Button
                                     color='primary'
                                     variant='solid'
                                     size='lg'
                                     className='group relative overflow-hidden rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-white/25'>
-                                    <span className='relative z-10'>Create Your First Post</span>
+                                    <span className='relative z-10'>Create Your Own Store</span>
                                     <div className='absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-500 group-hover:translate-x-full'></div>
                                 </Button>
                             </Link>
 
-                            <Link href='/contact'>
+                            <Link href='https://github.com/Jaffer720/bloggen-commerce-starter'>
                                 <Button
                                     color='primary'
                                     variant='ghost'
@@ -66,7 +66,7 @@ export default function Cta() {
                                             />
                                         </svg>
                                     }>
-                                    Schedule Demo
+                                    View Source
                                 </Button>
                             </Link>
                         </div>

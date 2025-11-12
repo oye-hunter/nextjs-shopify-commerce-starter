@@ -1,7 +1,7 @@
 import { createPageMetadata } from '@/lib/seo/metadata/create-page-metadata';
 import { getCollectionProducts, getCollections } from '@/lib/shopify';
 import { Product } from '@/lib/shopify/types';
-import { Carousel } from 'components/carousel';
+import { Carousel } from '@/components/ui/carousel';
 import { ThreeItemGrid } from 'components/grid/three-items';
 import { Metadata } from 'next';
 

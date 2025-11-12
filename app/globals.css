@@ -16,6 +16,8 @@
 /* Styles removed and will be injected via browser */
 #nd-page > div:first-child {
     @apply !top-[65px];
+    width: 100%;
+    padding-block-end: 0px !important;
 }
 
 #nd-tocnav {

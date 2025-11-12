@@ -33,7 +33,7 @@ const config: NextConfig = {
           pathname: '/s/files/**'
         }
       ],
-      qualities:[60, 75, 85]
+      qualities:[60, 65, 70, 75, 80, 85, 90, 95]
     },
   
     // Security headers

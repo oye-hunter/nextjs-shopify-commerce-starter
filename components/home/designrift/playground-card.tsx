@@ -5,8 +5,8 @@ import { useEffect, useState } from 'react';
 
 import { minimalCSS, modernCSS, subtleCSS } from '@/lib/utils/theme';
 
-import { Button } from '../../ui/button';
-import { ThemeToggle } from '../../ui/theme-toggle';
+import { Button } from '@/components/ui/button';
+import { ThemeToggle } from '@/components/ui/theme-toggle';
 import { PiHeart } from "react-icons/pi";
 
 interface PlayGroundCardProps {
