@@ -1,6 +1,6 @@
 import { getCollectionProducts } from 'lib/shopify';
 import Link from 'next/link';
-import { GridTileImage } from './grid/tile';
+import { GridTileImage } from '../grid/tile';
 import { Product } from '@/lib/shopify/types';
 
 export async function Carousel({ products }: { products?: Product[] }) {

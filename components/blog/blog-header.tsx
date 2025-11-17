@@ -12,18 +12,19 @@ interface Props {
 }
 
 export default function BlogHeader({ title, publishedAt, image }: Props) {
+    const isBlog = title !== "Getting Started: Shopify + Next.js Commerce Starter"
     return (
-        <header className='relative mx-auto max-w-6xl px-8'>
+        <header className='relative mx-auto w-full max-w-6xl'>
             {/* Header Section */}
             <div className='mb-20'>
-                <div className='mb-8 flex items-center space-x-3'>
+                {isBlog && <div className='mb-8 flex items-center space-x-3'>
                     <Link
                         href='/blog'
                         className='text-canvas-text hover:text-primary-text inline-flex items-center transition-colors'>
                         <PiArrowRight className='mr-2 h-4 w-4' />
                         Back to Blogs
                     </Link>
-                </div>
+                </div>}
                 <h1 className='from-primary-solid via-primary-text to-primary-text-contrast mb-8 bg-gradient-to-r bg-clip-text text-4xl leading-tight font-bold tracking-tight md:text-6xl'>
                     {title}
                 </h1>
