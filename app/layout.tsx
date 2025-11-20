@@ -87,11 +87,11 @@ export default async function RootLayout({
                   <ShopUnavailableBanner />
                 </Suspense>
                 <RootProvider>
-                  <DottedBackground>
                   <Suspense fallback={null}>
+                  <DottedBackground>
                     {children}
-                  </Suspense>
                   </DottedBackground>
+                  </Suspense>
                 </RootProvider>
                 <Toaster closeButton />
                 <WelcomeToast />

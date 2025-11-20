@@ -26,13 +26,13 @@ export default function DottedBackground({
   const style = {
     /* base dot style */
     "--dot-size": "1px",
-    "--dot-color": "rgba(255,255,255)",
+    "--dot-color": "var(--canvas-solid)",
     "--dot-space": "14px",
 
     /* glow settings */
     "--glow-radius": "100px",
     "--glow-dot-size": "2px",
-    "--glow-dot-color": "white",
+    "--glow-dot-color": "var(--canvas-text-contrast)",
 
     width: "100%",
     height: "100%",

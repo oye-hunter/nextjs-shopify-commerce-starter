@@ -45,7 +45,7 @@ export default function Hero() {
                                     that feels uniquely yours.
                                 </span>
                             </h1>
-                            <h2 className='text-canvas-text mb-8 text-xl leading-relaxed font-normal tracking-normal md:text-2xl'>
+                            <h2 className='text-canvas-text-contrast mb-8 text-xl leading-relaxed font-normal tracking-normal md:text-2xl'>
                                 Products & checkout powered by Shopify. UI, performance, blogs & structured data powered by Bloggen + Vercel Commerce.
                             </h2>
                             <div className='flex flex-col gap-4'>
