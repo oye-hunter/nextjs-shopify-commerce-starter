@@ -3,6 +3,7 @@ import { getCollectionProducts, getCollections } from '@/lib/shopify';
 import { Product } from '@/lib/shopify/types';
 import { Carousel } from '@/components/ui/carousel';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ThreeItemGrid } from '@/components/grid/three-items';
 import { Metadata } from 'next';
 
@@ -41,8 +42,27 @@ export default async function HomePage() {
   const threeProducts = allProducts.slice(0, 3);
 
   return (
-    <div className="mt-8">
-      <ThreeItemGrid products={threeProducts} />
+    <div>
+      <div className="relative h-[60vh] w-full overflow-hidden">
+        <Image
+          src="/assets/store-hero-image.jpg"
+          alt="Store Hero"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-6">
+          <h1 className="text-5xl font-bold tracking-tight sm:text-6xl mb-4">
+            Discover Our Collection
+          </h1>
+          <p className="max-w-xl text-lg sm:text-xl text-gray-200">
+            Explore our curated selection of premium products designed to elevate your lifestyle. Quality, style, and performance in every detail.
+          </p>
+        </div>
+      </div>
+      <div className="pt-8">
+        <ThreeItemGrid products={threeProducts} />
       {byCollection.map((pbc, i) => (
         <section
           key={pbc.collection?.handle ?? i}
@@ -87,6 +107,7 @@ export default async function HomePage() {
           </div>
         </section>
       ))}
+      </div>
     </div>
   );
 }

@@ -1,75 +1,52 @@
 'use client';
 
-import React from 'react';
-
 import Link from 'next/link';
-
 import { Button } from '@/components/ui/button';
 
 export default function Cta() {
     return (
-        <section className='w-full max-w-7xl px-4 py-10 sm:px-6 lg:px-8 xl:py-16'>
-            {/* CTA Section */}
-            <div>
-                <div className='from-canvas-bg via-canvas-bg-hover to-canvas-bg-subtle relative overflow-hidden rounded-2xl bg-gradient-to-br p-8 shadow-xl sm:p-12 lg:p-16'>
-                    {/* Floating Elements */}
-                    <div className='bg-canvas-bg-hover absolute -top-4 -right-4 h-32 w-32 rounded-full blur-2xl'></div>
-                    <div className='bg-canvas-bg-hover absolute -bottom-8 -left-8 h-40 w-40 rounded-full blur-3xl'></div>
+        <section className='py-24 px-4'>
+            <div className='max-w-7xl mx-auto relative overflow-hidden rounded-[2rem] border border-canvas-line bg-canvas-bg px-8 py-20 text-center shadow-sm'>
+                
+                {/* Abstract Background Shapes */}
+                <div className='absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none'>
+                    <div className='absolute -top-[50%] left-[20%] w-[60%] h-[60%] rounded-full bg-primary-bg-subtle blur-[120px] opacity-60' />
+                    <div className='absolute top-[40%] right-[10%] w-[40%] h-[40%] rounded-full bg-secondary-bg-subtle blur-[100px] opacity-50' />
+                </div>
 
-                    {/* Content */}
-                    <div className='relative z-10 mx-auto max-w-4xl text-center'>
-                        <div className='mb-6'>
-                            <span className='bg-canvas-bg-subtle text-canvas-text-contrast inline-flex items-center rounded-full px-4 py-2 text-sm font-medium backdrop-blur-sm'>
-                                ✨ Discover the power of Bloggen
-                            </span>
-                        </div>
+                <div className='relative z-10 flex flex-col items-center'>
+                    <div className='inline-flex items-center justify-center p-2 mb-8 rounded-full bg-canvas-base border border-canvas-line shadow-sm'>
+                        <span className='px-3 py-1 text-sm font-medium text-primary-text'>
+                            Ready to build?
+                        </span>
+                    </div>
 
-                        <h2 className='text-canvas-text-contrast mb-6 text-3xl font-bold sm:text-4xl lg:text-5xl'>
-                            Ready to Get Started?
-                        </h2>
-
-                        <p className='text-canvas-text mb-8 text-lg text-balance sm:text-xl lg:text-2xl'>
-                            Join thousands of teams who have already revolutionized their productivity. Build smarter
-                            with AI-powered content tools.
-                        </p>
-
-                        {/* CTA Section */}
-                        <div className='flex flex-col gap-4 sm:flex-row sm:justify-center'>
-                            <Link href='/docs' target='_blank' rel='noopener noreferrer'>
-                                <Button
-                                    color='primary'
-                                    variant='solid'
-                                    size='lg'
-                                    className='group relative overflow-hidden rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-white/25'>
-                                    <span className='relative z-10'>Create Your Own Store</span>
-                                    <div className='absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-500 group-hover:translate-x-full'></div>
-                                </Button>
-                            </Link>
-
-                            <Link href='https://github.com/Jaffer720/bloggen-commerce-starter'>
-                                <Button
-                                    color='primary'
-                                    variant='ghost'
-                                    size='lg'
-                                    className='group'
-                                    trailingIcon={
-                                        <svg
-                                            className='h-5 w-5 transition-transform group-hover:translate-x-1'
-                                            fill='none'
-                                            stroke='currentColor'
-                                            viewBox='0 0 24 24'>
-                                            <path
-                                                strokeLinecap='round'
-                                                strokeLinejoin='round'
-                                                strokeWidth={2}
-                                                d='M17 8l4 4m0 0l-4 4m4-4H3'
-                                            />
-                                        </svg>
-                                    }>
-                                    View Source
-                                </Button>
-                            </Link>
-                        </div>
+                    <h2 className='text-4xl md:text-5xl font-bold text-canvas-text-contrast mb-6 tracking-tight max-w-3xl'>
+                        Start your next commerce project with Bloggen
+                    </h2>
+                    
+                    <p className='text-lg md:text-xl text-canvas-text mb-10 max-w-2xl leading-relaxed'>
+                        The modern stack for headless Shopify storefronts. Performance, SEO, and design freedom out of the box.
+                    </p>
+                    
+                    <div className='flex flex-col sm:flex-row gap-4 w-full sm:w-auto'>
+                        <Link href='/docs' className='w-full sm:w-auto'>
+                            <Button 
+                                size='lg' 
+                                className='w-full sm:w-auto rounded-full px-8 h-12 text-base font-medium bg-primary-solid text-primary-on-primary hover:bg-primary-solid-hover border-none shadow-md hover:shadow-lg transition-all'
+                            >
+                                Get Started
+                            </Button>
+                        </Link>
+                        <Link href='https://github.com/Jaffer720/bloggen-commerce-starter' className='w-full sm:w-auto'>
+                            <Button 
+                                size='lg' 
+                                variant='outline' 
+                                className='w-full sm:w-auto rounded-full px-8 h-12 text-base font-medium border-canvas-line bg-canvas-base text-canvas-text-contrast hover:bg-canvas-bg-hover'
+                            >
+                                View Source
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </div>
