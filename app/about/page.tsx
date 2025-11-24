@@ -46,7 +46,7 @@ export default function AboutPage() {
                     </div>
                     <h1
                         id='about-page-title'
-                        className='text-canvas-text-contrast mb-4 text-4xl leading-tight font-bold tracking-tight md:text-6xl'>
+                        className='from-primary-solid via-primary-subtle to-primary-text-contrast bg-gradient-to-r bg-clip-text text-transparent mb-4 text-4xl leading-tight font-bold tracking-tight md:text-6xl'>
                         Custom Shopify Storefront with Next.js
                     </h1>
                     <h2

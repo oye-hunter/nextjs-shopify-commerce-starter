@@ -57,7 +57,7 @@ export default async function HomePage() {
             Discover Our Collection
           </h1>
           <p className="max-w-xl text-lg sm:text-xl text-gray-200">
-            Explore our curated selection of premium products designed to elevate your lifestyle. Quality, style, and performance in every detail.
+            Explore our curated selection of premium products designed to elevate your lifestyle.
           </p>
         </div>
       </div>
