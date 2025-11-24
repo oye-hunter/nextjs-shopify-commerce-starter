@@ -21,49 +21,49 @@ interface FeatureData {
 const FEATURES: FeatureData[] = [
     {
         icon: <FaSearch className='h-6 w-6' />,
-        title: 'SEO On by Default',
-        descriptionStart: 'Built-in metadata, OG Images, sitemap & much more to ensure your site is optimized from day one.',
+        title: 'Full SEO Suite',
+        descriptionStart: 'Canonical tags, dynamic OG images, sitemap & robots.txt, plus structured metadata wired from the start.',
         color: 'from-blue-500 to-cyan-500',
         gradient: 'bg-gradient-to-br from-blue-50 to-cyan-50'
     },
     {
+        icon: <FaRegStar className='h-6 w-6' />,
+        title: 'Structured Data & Rich Snippets',
+        descriptionStart: 'Auto‑generated JSON‑LD (products, pages, FAQ) improves discoverability and eligibility for rich results.',
+        color: 'from-orange-500 to-red-500',
+        gradient: 'bg-gradient-to-br from-orange-50 to-red-50'
+    },
+    {
+        icon: <LiaMarkdown className='h-6 w-6' />,
+        title: 'MDX Content Engine',
+        descriptionStart: 'Drop MDX files into ',
+        code: '/content',
+        descriptionEnd: ' and they instantly render with typography, SEO meta & dynamic OG support.',
+        color: 'from-emerald-500 to-teal-500',
+        gradient: 'bg-gradient-to-br from-emerald-50 to-teal-50'
+    },
+    {
         icon: <TbLetterD className='h-6 w-6' />,
-        title: 'Designrift',
-        descriptionStart: 'Create stunning themes for your web application with ',
-        descriptionEnd: ' leveraging Radix color palettes for cohesive styling.',
+        title: 'Theme Freedom (Designrift)',
+        descriptionStart: 'Craft bespoke color systems & UI tokens using ',
+        descriptionEnd: ' for rapid iteration—no locked Shopify theme constraints.',
         link: 'https://www.designrift.dev',
         color: 'from-purple-500 to-pink-500',
         gradient: 'bg-gradient-to-br from-purple-50 to-pink-50'
     },
     {
-        icon: <LiaMarkdown className='h-6 w-6' />,
-        title: 'MDX-Powered Blog',
-        descriptionStart: 'Simply drop your MDX blog files into ',
-        code: '/content',
-        descriptionEnd: ' to publish SEO-friendly, responsive posts instantly.',
-        color: 'from-emerald-500 to-teal-500',
-        gradient: 'bg-gradient-to-br from-emerald-50 to-teal-50'
-    },
-    {
-        icon: <FaRegStar className='h-6 w-6' />,
-        title: 'Rich Results Ready',
-        descriptionStart: 'Auto-generated JSON-LD structured data powers rich snippets for improved Google visibility.',
-        color: 'from-orange-500 to-red-500',
-        gradient: 'bg-gradient-to-br from-orange-50 to-red-50'
+        icon: <FaChartLine className='h-6 w-6' />,
+        title: 'Performance & Caching',
+        descriptionStart: 'Server‑first rendering + smart caching & ISR keep product & content pages fast with minimal invalidation.',
+        color: 'from-green-500 to-emerald-500',
+        gradient: 'bg-gradient-to-br from-green-50 to-emerald-50'
     },
     {
         icon: <FaRss className='h-6 w-6' />,
-        title: 'Instant RSS Feed',
-        descriptionStart: 'Automatically generate an RSS feed to keep subscribers updated with every new post in real time.',
+        title: 'Syndication & Analytics',
+        descriptionStart: 'Built‑in RSS feed generation and optional GA measurement ID for traffic & engagement insight.',
         color: 'from-indigo-500 to-blue-500',
         gradient: 'bg-gradient-to-br from-indigo-50 to-blue-50'
-    },
-    {
-        icon: <FaChartLine className='h-6 w-6' />,
-        title: 'SEO & Performance Analytics',
-        descriptionStart: 'Built-in performance tracking with Google Analytics, Lighthouse metrics, and PageSpeed Insights.',
-        color: 'from-green-500 to-emerald-500',
-        gradient: 'bg-gradient-to-br from-green-50 to-emerald-50'
     }
 ];
 
