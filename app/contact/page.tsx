@@ -65,8 +65,8 @@ export default function ContactPage() {
                 <div className='px-4 py-16'>
                     {/* Header Section */}
                     <header className='mb-12 text-center'>
-                        <h1 className='text-canvas-text-contrast mb-4 text-4xl font-bold md:text-5xl'>Get in touch</h1>
-                        <h2 className='text-canvas-text mx-auto max-w-2xl text-lg text-balance'>
+                        <h1 className='text-primary-text mb-4 text-4xl font-bold md:text-5xl'>Get in touch</h1>
+                        <h2 className='text-primary-text-contrast mx-auto max-w-2xl text-lg text-balance'>
                             Book a meeting with us to discuss how we can help or fill out a form to get in touch
                         </h2>
                     </header>
