@@ -25,14 +25,20 @@ export default function BlogHeader({ title, publishedAt, image }: Props) {
                         Back to Blogs
                     </Link>
                 </div>}
-                <h1 className='from-primary-solid via-primary-text to-primary-text-contrast mb-8 bg-gradient-to-r bg-clip-text text-4xl leading-tight font-bold tracking-tight md:text-6xl'>
+                <h1
+                    className={`${
+                        isBlog
+                            ? 'text-canvas-text-contrast'
+                            :  'from-primary-solid via-primary-subtle to-primary-text-contrast bg-gradient-to-r bg-clip-text text-transparent'
+                    } mb-8 text-4xl font-bold leading-tight tracking-tight md:text-6xl`}
+                >
                     {title}
                 </h1>
                 {publishedAt && <time className='text-canvas-text text-lg'>{formatDate(publishedAt)}</time>}
             </div>
 
             {/* Featured Image */}
-            {image && (
+            {isBlog && image && (
                 <div className='border-canvas-border relative mb-10 aspect-[21/9] w-full overflow-hidden rounded-sm border shadow-2xl'>
                     <Image
                         src={image}

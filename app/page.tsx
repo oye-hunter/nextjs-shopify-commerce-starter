@@ -9,6 +9,7 @@ import Performance from '@/components/home/perfomance/performance';
 import { createPageMetadata } from '@/lib/seo/metadata/create-page-metadata';
 import HomeSchema from '@/lib/seo/schema/home';
 import FAQSchema from '@/lib/seo/schema/faq';
+import DottedBackground from '@/components/ui/dotted-background';
 
 export const metadata: Metadata = createPageMetadata({
     path: ''
@@ -16,6 +17,7 @@ export const metadata: Metadata = createPageMetadata({
 
 export default function Page() {
     return (
+        <DottedBackground>
         <main className='relative flex w-full flex-col items-center justify-center overflow-hidden'>
             <HomeSchema />
             <FAQSchema />
@@ -26,5 +28,6 @@ export default function Page() {
             <Faq />
             <Cta />
         </main>
+        </DottedBackground>
     );
 }
