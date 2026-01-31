@@ -21,7 +21,7 @@ const faqData: FAQItem[] = [
         id: 2,
         question: 'How do I get started?',
         answer:
-            'Run `npx create-bloggen-commerce-starter-app`, add your Shopify Storefront API credentials, and start the dev server. Design pages, map collections, and deploy to Vercel in minutes.'
+            'Run `git clone https://github.com/oye-hunter/nextjs-shopify-commerce-starter`, add your Shopify Storefront API credentials, and start the dev server. Design pages, map collections, and deploy to Vercel in minutes.'
     },
     {
         id: 3,

@@ -41,7 +41,7 @@ export default async function Footer() {
           <a
             className="flex h-8 w-max flex-none items-center justify-center rounded-md border border-neutral-200 bg-white text-xs text-black dark:border-neutral-700 dark:bg-black dark:text-white"
             aria-label="View Source on GitHub"
-            href="https://github.com/Jaffer720/bloggen-commerce-starter"
+            href="https://github.com/oye-hunter/nextjs-shopify-commerce-starter"
           >
             <span className="px-3"><PiGithubLogo size={16} /></span>
             <hr className="h-full border-r border-neutral-200 dark:border-neutral-700" />
@@ -57,11 +57,11 @@ export default async function Footer() {
           </p>
           <hr className="mx-4 hidden h-4 w-[1px] border-l border-neutral-400 md:inline-block" />
           <p>
-            <a href="https://github.com/Jaffer720/bloggen-commerce-starter">View the source</a>
+            <a href="https://github.com/oye-hunter/nextjs-shopify-commerce-starter">View the source</a>
           </p>
           <p className="md:ml-auto">
-            <a href="https://silverthreadlabs.com" className="text-canvas-text-contrast">
-              Created by Silverthread Labs
+            <a href="#" className="text-canvas-text-contrast">
+              Created by Hassan Mughal
             </a>
           </p>
         </div>

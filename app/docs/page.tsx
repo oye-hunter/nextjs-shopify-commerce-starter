@@ -10,9 +10,8 @@ import { DocsBody, DocsPage } from 'fumadocs-ui/page';
 import BlogHeader from '@/components/blog/blog-header';
 
 export default function DocsPageRoute() {
-    // We only have one docs page: content/docs/getting-started-with-bloggen-commerce-starter.mdx
     // Fumadocs `source` exposes .getPage with a slug array; the docs baseUrl is '/docs'
-    const page = source.getPage(['getting-started-with-bloggen-commerce-starter']);
+    const page = source.getPage(['getting-started-with-nextjs-shopify-commerce-starter']);
     if (!page) notFound();
 
     const MDXContent = page.data.body;

@@ -72,7 +72,7 @@ export default async function RootLayout({
           attribute='class'
           defaultTheme='system'
           enableSystem={true}
-          storageKey='bloggen-commerce-starter-theme'
+          storageKey='nextjs-shopify-commerce-starter-theme'
           disableTransitionOnChange>
           <Suspense fallback={null}>
             <CartProvider

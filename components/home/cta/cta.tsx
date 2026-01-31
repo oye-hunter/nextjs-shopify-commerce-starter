@@ -22,7 +22,7 @@ export default function Cta() {
                     </div>
 
                     <h2 className='text-4xl md:text-5xl font-bold text-canvas-text-contrast mb-6 tracking-tight max-w-3xl'>
-                        Start your next commerce project with Bloggen
+                        Start your next commerce project with the Next.js and Shopify today.
                     </h2>
                     
                     <p className='text-lg md:text-xl text-canvas-text mb-10 max-w-2xl leading-relaxed'>
@@ -38,7 +38,7 @@ export default function Cta() {
                                 Get Started
                             </Button>
                         </Link>
-                        <Link href='https://github.com/Jaffer720/bloggen-commerce-starter' className='w-full sm:w-auto'>
+                        <Link href='https://github.com/oye-hunter/nextjs-shopify-commerce-starter' className='w-full sm:w-auto'>
                             <Button 
                                 size='lg' 
                                 variant='outline' 

@@ -8,7 +8,7 @@ const blogSchema: WithContext<Blog> = {
     url: `${siteConfig.baseUrl}/blog`,
     name: `Blog - ${siteConfig.title}`,
     description:
-        'Learn how to build, customize, and grow your site with Bloggen SEO Starter and Bloggen AI. Setup guides, tips, and SEO content strategies—all in one place.',
+        'Learn how to build, customize, and grow your site with Next.js Shopify Commerce Starter. Setup guides, tips, and SEO content strategies—all in one place.',
     author: {
         '@type': 'Person',
         name: siteConfig.author.name,

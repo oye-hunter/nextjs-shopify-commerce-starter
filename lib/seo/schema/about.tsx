@@ -7,7 +7,7 @@ const aboutSchema: WithContext<WebPage> = {
     "@type": "AboutPage",
     "url": `${siteConfig.baseUrl}/about`,
     "name": `About - ${siteConfig.title}`,
-    "description": 'Launch a fully optimized Next.js site with Bloggen SEO Starter, then create high-quality, SEO-friendly content effortlessly using Bloggen AI.',
+    "description": 'Launch a fully optimized Next.js site with Next.js Shopify Commerce Starter, then create high-quality, SEO-friendly content effortlessly.',
     "isPartOf": {
         "@type": "WebSite",
         "url": siteConfig.baseUrl,

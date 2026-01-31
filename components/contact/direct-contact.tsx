@@ -7,7 +7,7 @@ import React from 'react';
 // Small wrapper to match the card look used on the contact page
 const ContentWrapper = ({ children, className = '' }: { children: React.ReactNode; className?: string }) => (
     <div
-        className={`from-canvas-bg via-canvas-subtle to-canvas-bg border-canvas-line overflow-hidden rounded-xl border bg-gradient-to-bl from-0% via-50% to-100% shadow-sm ${className}`}>
+        className={`overflow-hidden rounded-xl border bg-gradient-to-bl from-0% via-50% to-100% shadow-sm ${className}`}>
         {children}
     </div>
 );
@@ -22,7 +22,7 @@ export default function DirectContact({ phoneHref, whatsappHref, emailHref = 'ma
     return (
         <section aria-label='Direct contact options' className='mx-auto mt-8 max-w-2xl'>
             <ContentWrapper className='p-6'>
-                <div className='mb-4 text-center'>
+                {/* <div className='mb-4 text-center'>
                     <h3 className='text-canvas-text-contrast text-xl font-semibold'>Prefer direct contact?</h3>
                     <p className='text-canvas-text mt-1 text-sm'>Reach us instantly via phone or WhatsApp.</p>
                 </div>
@@ -38,9 +38,9 @@ export default function DirectContact({ phoneHref, whatsappHref, emailHref = 'ma
                             WhatsApp
                         </Button>
                     </a>
-                </div>
+                </div> */}
 
-                <p className='text-canvas-text mt-4 text-center text-sm'>
+                <p className='text-canvas-text text-center text-sm'>
                     Prefer email?{' '}
                     <a className='text-canvas-text-contrast font-medium underline' href={emailHref}>
                         silverthreadlabs@gmail.com

@@ -24,11 +24,11 @@ export default function AboutPage() {
                                 Powered by
                             </p>
                             <Link
-                                href='https://bloggen.dev'
+                                href='https://github.com/vercel/commerce'
                                 target='_blank'
                                 rel='noopener noreferrer'
                                 className='text-primary-solid hover:text-primary-solid-hover transition-colors'>
-                                Bloggen
+                                Vercel
                             </Link>
                         </div>
                         <div className='flex items-center gap-2'>
@@ -36,11 +36,11 @@ export default function AboutPage() {
                                 Authored by
                             </p>
                             <Link
-                                href='https://silverthreadlabs.com'
+                                href='https://github.com/oye-hunter'
                                 target='_blank'
                                 rel='noopener noreferrer'
                                 className='text-primary-solid hover:text-primary-solid-hover transition-colors'>
-                                Silverthread Labs
+                                Hassan Mughal
                             </Link>
                         </div>
                     </div>

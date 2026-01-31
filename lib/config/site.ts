@@ -1,16 +1,16 @@
 import { getURL } from '@/lib/utils/url';
 
 export const siteConfig = {
-    title: 'Bloggen commerce Starter',
+    title: 'Next.js Shopify Commerce Starter',
     description:
-        'Launch your shopify store front site with Bloggen commerce Starter featuring Global Metadata Configuration, MDX blog pages, shopify collection, products and productDetails data fetching, cart and chechout integration dynamic OG images, JSON-LD and more.',
+        'Launch your shopify store front site with Next.js Shopify Commerce Starter featuring Global Metadata Configuration, MDX blog pages, shopify collection, products and productDetails data fetching, cart and chechout integration dynamic OG images, JSON-LD and more.',
     baseUrl: getURL(),
-    creator: 'Silverthread Labs',
-    publisher: 'Silverthread Labs',
+    creator: 'Hassan Mughal',
+    publisher: 'Hassan Mughal',
     keywords: [
         'e-commerce',
         'shopify store front',
-        'bloggen commerce starter',
+        'nextjs shopify commerce starter',
         'seo',
         'shopify',
         'storeFront',
@@ -23,13 +23,13 @@ export const siteConfig = {
         'fumadocs',
     ],
     alternateNames: [
-        'bloggen commerce starter',
-        'bloggen commerce template',
-        'bloggen shopify starter',
-        'bloggen shopify template'
+        'nextjs shopify commerce starter',
+        'nextjs shopify commerce template',
+        'nextjs shopify starter',
+        'nextjs shopify template'
     ],
     author: {
-        name: 'Silverthread Labs',
+        name: 'Hassan Mughal',
         url: 'https://www.silverthreadlabs.com',
         logo: 'https://www.silverthreadlabs.com/favicon/favicon.ico',
         twitterHandle: '@syedsaif_666'
@@ -43,7 +43,7 @@ export const siteConfig = {
         description: title
     }),
     social: {
-        sameAs: ['https://www.bloggen.dev']
+        sameAs: []
 
     },
     sitemap: {

@@ -1,6 +1,6 @@
 {
-  "name": "Bloggen SEO Starter",
-  "short_name": "Bloggen SEO Starter",
+  "name": "Next.js Shopify Commerce Starter",
+  "short_name": "Next.js Shopify Starter",
 
     "icons": [
       { "src": "/favicon.ico", "type": "image/x-icon", "sizes": "16x16 32x32" },

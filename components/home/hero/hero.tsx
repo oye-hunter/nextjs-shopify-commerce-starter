@@ -15,7 +15,7 @@ export default function Hero() {
     const [copied, setCopied] = useState(false);
 
     const handleCopy = async () => {
-        await navigator.clipboard.writeText('npx create-bloggen-app');
+        await navigator.clipboard.writeText('git clone https://github.com/oye-hunter/nextjs-shopify-commerce-starter');
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);
     };
@@ -49,7 +49,7 @@ export default function Hero() {
                                     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
                                 }}
                                 className='text-primary-text border-canvas-line mb-4 block max-w-fit mx-auto rounded border border-none bg-transparent px-1 font-mono text-sm leading-normal font-normal tracking-widest whitespace-nowrap uppercase md:text-base'>
-                                Powered by Bloggen & Vercel Commerce
+                                Powered by Vercel Commerce
                             </motion.span>
                             <motion.h1 
                                 variants={{
@@ -69,18 +69,18 @@ export default function Hero() {
                                     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
                                 }}
                                 className='text-canvas-text-contrast mb-8 text-xl leading-relaxed font-normal tracking-normal md:text-2xl'>
-                                Products & checkout powered by Shopify. UI, performance, blogs & structured data powered by Bloggen + Vercel Commerce.
+                                Products & checkout powered by Shopify. UI, performance, blogs & structured data powered by Next.js + Vercel Commerce.
                             </motion.h2>
                             <motion.div 
                                 variants={{
                                     hidden: { opacity: 0, y: 20 },
                                     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
                                 }}
-                                className='flex flex-col gap-4 max-w-2xl justify-center mx-auto'>
+                                className='flex flex-col gap-4 max-w-3xl justify-center mx-auto'>
                                 <div className='flex flex-col gap-4 sm:flex-row'>
                                     <Link
                                         target='_blank'
-                                        href='https://github.com/Jaffer720/bloggen-commerce-starter'
+                                        href='https://github.com/oye-hunter/nextjs-shopify-commerce-starter'
                                         className='flex-1'>
                                         <Button
                                             color='primary'
@@ -111,7 +111,7 @@ export default function Hero() {
 
                                 <div className='bg-canvas-base border-canvas-bg-active flex items-center justify-between rounded-lg border px-4 py-3 font-mono text-sm shadow-inner'>
                                     <span className='text-canvas-text-contrast inline-flex max-w-fit px-1 text-sm leading-normal font-normal tracking-normal whitespace-nowrap md:text-lg '>
-                                        $ npx create-bloggen-commerce-starter-app
+                                        $ git clone https://github.com/oye-hunter/nextjs-shopify-commerce-starter
                                     </span>
                                     <Button
                                         onClick={handleCopy}
