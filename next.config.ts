@@ -20,8 +20,8 @@ const withMDX = createMDX();
 
 const config: NextConfig = {
     reactStrictMode: true,
+    cacheComponents: true,
     experimental: {
-      cacheComponents: true,
       inlineCss: true
     },
     images: {

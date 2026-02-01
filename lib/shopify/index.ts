@@ -6,7 +6,7 @@ import {
 import { isShopifyError } from 'lib/type-guards';
 import { ensureStartsWith } from 'lib/utils';
 import {
-  unstable_cacheTag as cacheTag,
+  cacheTag,
   cacheLife,
   updateTag
 } from 'next/cache';
