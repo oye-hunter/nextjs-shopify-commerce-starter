@@ -27,9 +27,9 @@ export default function Hero() {
             </div>
 
             <div className='relative z-10'>
-                <div className='mx-auto flex max-w-7xl flex-col lg:flex-row lg:gap-16'>
+                <div className='mx-auto flex flex-col lg:flex-row lg:gap-16'>
                     {/* Left Section */}
-                    <div className='flex flex-1 flex-col justify-center items-center text-center py-10 xl:py-16'>
+                    <div className='flex flex-1 flex-col w-[90vw] lg:w-5xl justify-center items-center text-center py-10 xl:py-16'>
                         <motion.div
                             initial="hidden"
                             animate="visible"
@@ -42,7 +42,7 @@ export default function Hero() {
                                     }
                                 }
                             }}
-                            className='max-w-4xl'>
+                            className=''>
                             <motion.span 
                                 variants={{
                                     hidden: { opacity: 0, y: 20 },
@@ -68,7 +68,7 @@ export default function Hero() {
                                     hidden: { opacity: 0, y: 20 },
                                     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
                                 }}
-                                className='text-canvas-text-contrast mb-8 text-xl leading-relaxed font-normal tracking-normal md:text-2xl'>
+                                className='text-canvas-text-contrast mb-8 leading-relaxed font-normal tracking-normal md:text-2xl'>
                                 Products & checkout powered by Shopify. UI, performance, blogs & structured data powered by Next.js + Vercel Commerce.
                             </motion.h2>
                             <motion.div 
@@ -81,7 +81,7 @@ export default function Hero() {
                                     <Link
                                         target='_blank'
                                         href='https://github.com/oye-hunter/nextjs-shopify-commerce-starter'
-                                        className='flex-1'>
+                                        className='flex-1 w-full sm:w-auto'>
                                         <Button
                                             color='primary'
                                             variant='solid'
@@ -96,7 +96,7 @@ export default function Hero() {
                                             View Source
                                         </Button>
                                     </Link>
-                                    <Link href='/docs' className='flex-1'>
+                                    <Link href='/docs' className='flex-1 w-full sm:w-auto'>
                                         <Button
                                             color='primary'
                                             variant='surface'
@@ -109,9 +109,9 @@ export default function Hero() {
                                     </Link>
                                 </div>
 
-                                <div className='bg-canvas-base border-canvas-bg-active flex items-center justify-between rounded-lg border px-4 py-3 font-mono text-sm shadow-inner'>
+                                <div className='bg-canvas-base border-canvas-bg-active hidden  lg:flex items-center justify-between rounded-lg border px-4 py-3 font-mono text-sm shadow-inner'>
                                     <span className='text-canvas-text-contrast inline-flex max-w-fit px-1 text-sm leading-normal font-normal tracking-normal whitespace-nowrap md:text-lg '>
-                                        $ git clone https://github.com/oye-hunter/nextjs-shopify-commerce-starter
+                                        git clone https://github.com/oye-hunter/nextjs-shopify-commerce-starter
                                     </span>
                                     <Button
                                         onClick={handleCopy}

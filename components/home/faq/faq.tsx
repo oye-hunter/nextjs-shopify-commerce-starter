@@ -142,7 +142,7 @@ export default function Faq() {
     };
 
     return (
-        <section className='py:10 w-full px-4 sm:px-6 lg:px-8 xl:py-16' aria-label='Frequently Asked Questions'>
+        <section className='py:10 pt-20 w-full px-4 sm:px-6 lg:px-8 xl:py-16' aria-label='Frequently Asked Questions'>
             <div className='mx-auto max-w-4xl'>
                 {/* Header */}
                 <div className='mb-12 text-center'>
